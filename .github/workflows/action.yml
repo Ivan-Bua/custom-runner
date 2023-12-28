@@ -12,6 +12,6 @@ jobs:
       - run: echo 'hello cloud gurus'
       - run: echo $HOSTNAME
       - run: pwd
-      - run: bash /runners/custom-runners/mostrar.sh
-      - run: cd /runners/custom-runners && bash ./mostrar.sh
+      - run: bash /runners/custom-runner/mostrar.sh
+      - run: cd /runners/custom-runner && bash ./mostrar.sh
       - run: pwd
