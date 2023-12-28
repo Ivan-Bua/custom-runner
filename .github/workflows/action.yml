@@ -15,4 +15,5 @@ jobs:
       - run: pwd
       - run: bash /runners/custom-runner/dev/mostrar.sh
       - run: cd /runners/custom-runner/dev && bash ./mostrar.sh
+      - run: cd /runners/custom-runner && sudo docker build -t flaskapi .
       - run: pwd
