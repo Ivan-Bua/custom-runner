@@ -10,6 +10,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - run: echo 'hello cloud gurus'
+      - run: cd /runners/custom-runner && git checkout dev
       - run: echo $HOSTNAME
       - run: pwd
       - run: bash /runners/custom-runner/dev/mostrar.sh
