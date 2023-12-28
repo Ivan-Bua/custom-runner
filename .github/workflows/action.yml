@@ -9,7 +9,8 @@ jobs:
   init:
     runs-on: self-hosted
     steps:
-      - run: echo 'hello cloud gurus'
+      - run: echo 'hello cloud gurus' 
+      - run: git checkout main 
       - run: echo $HOSTNAME
       - run: pwd
       - run: bash /runners/custom-runner/prd/mostrar.sh
